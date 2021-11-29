@@ -1,3 +1,8 @@
-// BUILD YOUR SERVER HERE
+const express = require('express')
+const Users = require('./users/model')
 
-module.exports = {}; // EXPORT YOUR SERVER instead of {}
+const server = express()
+
+server.user(express.json())
+
+module.exports = server
